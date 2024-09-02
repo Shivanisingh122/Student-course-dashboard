@@ -1,29 +1,39 @@
+body {
+  background-color: #f7eff7; /* Subtle background color */
+  margin: 0;
+  padding: 0;
+}
+
 .dashboard {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .dashboard h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .dashboard h2 {
-    font-size: 1.8rem;
-    color: #666;
-    margin-bottom: 2rem;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.dashboard h2 {
+  font-size: 1.8rem;
+  color: #181717;
+  margin-bottom: 2rem;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 2rem;
+  background-color: #f7eff7; /* White background for dashboard content */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+@media (max-width: 768px) {
   .dashboard-content {
-    display: flex;
-    gap: 2rem;
+    flex-direction: column;
   }
-  
-  @media (max-width: 768px) {
-    .dashboard-content {
-      flex-direction: column;
-    }
-  }
+}

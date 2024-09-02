@@ -1,5 +1,5 @@
 const initialState = {
-    name: 'John Doe',
+    name: 'Shivani Singh',
     enrolledCourses: [],
   };
   

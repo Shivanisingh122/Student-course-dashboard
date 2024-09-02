@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Subtle background color */
 }
 
 h1 {
@@ -12,6 +13,8 @@ h1 {
   margin: 8px;
   border-radius: 8px;
   text-align: center;
+  background-color: #fff; /* Card background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
 }
 
 .enrolled-course {
@@ -19,6 +22,8 @@ h1 {
   padding: 16px;
   margin: 8px;
   border-radius: 8px;
+  background-color: #c9eae96e; /* Card background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
 }
 
 .course-list {
@@ -30,12 +35,18 @@ input[type="text"] {
   padding: 8px;
   margin-bottom: 16px;
   width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
   padding: 8px 16px;
   margin-top: 8px;
   cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
 }
 
 progress {
