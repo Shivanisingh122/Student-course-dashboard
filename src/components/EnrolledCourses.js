@@ -27,7 +27,7 @@ function EnrolledCourses() {
                 <h3>{course.name}</h3>
               </Link>
               <p>Instructor: {course.instructor}</p>
-              <p>Due Date: {enrollment.dueDate}</p>
+              {/* <p>Due Date: {enrollment.dueDate}</p> */}
               <ProgressBar 
                 progress={enrollment.progress} 
                 onChange={(progress) => handleProgressChange(course.id, progress)}

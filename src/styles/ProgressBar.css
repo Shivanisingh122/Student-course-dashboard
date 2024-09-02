@@ -1,53 +1,89 @@
-/* Container styling */
+/* Container Styling */
 .progress-bar-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  /* Progress bar styling */
-  .progress-bar {
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    height: 8px;
-    outline: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .progress-bar::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: #007bff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .progress-bar::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: #007bff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .progress-bar:hover::-webkit-slider-thumb,
-  .progress-bar:hover::-moz-range-thumb {
-    background-color: #0056b3;
-  }
-  
-  /* Progress value styling */
-  .progress-value {
-    font-size: 14px;
-    color: #333;
-    margin-left: 5px;
-  }
-  
+  padding: 10px;
+ 
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto; 
+}
+
+/* Progress Bar Wrapper */
+.progress-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+  width: 100%;
+  background: linear-gradient(to right, #007bff, #007bff);
+  border-radius: 10px;
+  height: 10px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0; /* Default background color */
+  background-image: linear-gradient(to right, #007bff 0%, #007bff 0%, #e0e0e0 0%, #e0e0e0 100%);
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(to right, #007bff 0%, #007bff 0%, #e0e0e0 0%, #e0e0e0 100%);
+  border-radius: 10px;
+}
+
+.progress-bar::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, #007bff 0%, #007bff 0%, #e0e0e0 0%, #e0e0e0 100%);
+  border-radius: 10px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+/* Progress Value Styling */
+.progress-value {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Update the gradient on slider change */
+.progress-bar::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #007bff 0%, #007bff calc(var(--value) * 1%), #e0e0e0 calc(var(--value) * 1%), #e0e0e0 100%);
+}
+
+.progress-bar::-moz-range-track {
+  background: linear-gradient(to right, #007bff 0%, #007bff calc(var(--value) * 1%), #e0e0e0 calc(var(--value) * 1%), #e0e0e0 100%);
+}
+
+/* Update the background gradient dynamically using JavaScript */
