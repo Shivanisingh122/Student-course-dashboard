@@ -1,0 +1,53 @@
+/* Container styling */
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Progress bar styling */
+  .progress-bar {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 8px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .progress-bar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .progress-bar:hover::-webkit-slider-thumb,
+  .progress-bar:hover::-moz-range-thumb {
+    background-color: #0056b3;
+  }
+  
+  /* Progress value styling */
+  .progress-value {
+    font-size: 14px;
+    color: #333;
+    margin-left: 5px;
+  }
+  

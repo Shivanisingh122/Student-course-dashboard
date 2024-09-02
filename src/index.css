@@ -1,13 +1,44 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 24px;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.enrolled-course {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 8px 16px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+progress {
+  width: 100%;
+  margin-top: 8px;
 }

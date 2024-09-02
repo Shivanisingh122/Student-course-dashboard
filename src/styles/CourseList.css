@@ -1,0 +1,89 @@
+/* Container styling */
+.course-list {
+    background: linear-gradient(135deg, #f3f4f7, #e2e6ec);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading styling */
+  .course-list h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* List styling */
+  .course-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Course item styling */
+  .course-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Thumbnail styling */
+  .course-thumbnail {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  /* Info styling */
+  .course-info {
+    flex-grow: 1;
+    padding: 15px;
+  }
+  
+  .course-info h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin: 0 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .course-info h3:hover {
+    color: #0056b3;
+  }
+  
+  .course-info p {
+    margin: 0 0 5px;
+    color: #555;
+  }
+  
+  /* Button styling */
+  .course-info button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .course-info button:hover {
+    background-color: #218838;
+  }
+  
